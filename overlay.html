@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_960_720.jpg");
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.images {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlays {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-image: url("https://cdn.pixabay.com/photo/2018/10/02/19/43/tiger-3719749_960_720.jpg");
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlays {
+  bottom: 0;
+  height: 100%;
+}
+
+.texts {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="response.html">Home</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="overlay.html">view1<span class="sr-only">(current)</span></a></li>
+            <li><a href="overlays.html">view2</a></li>
+            </ul>
+            </div>
+  </nav>
+
+<h2>This is Bottom slider!</h2>
+
+
+<div class="container">
+  <img src="https://cdn.pixabay.com/photo/2018/10/02/14/06/fly-3718909_960_720.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello! Have A Great Day...</div>
+  </div>
+</div>
+<h2>Touch The Owl To Look Inside</h2>
+
+
+<div class="container">
+  <img src="https://cdn.pixabay.com/photo/2012/06/19/10/32/owl-50267_960_720.jpg" alt="Avatar" class="images">
+  <div class="overlays">
+    <div class="texts">yaah! It's Me</div>
+  </div>
+</div>
+ 
+
+</body>
+</html>
